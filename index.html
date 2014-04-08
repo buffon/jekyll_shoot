@@ -9,10 +9,15 @@ body,html {
  font-family: Century Gothic Tahoma;
  background: #DDDDDD;
  margin: 0 auto;
- position: relative;
+}
+
+.container {
+ background: #FFFFFF;
  width:1200px;
+ position: relative;
 }
 </style>
+<div class="container">
 <h2>{{ page.title }}</h2>
 <p>最新文章</p>
 <ul>
@@ -20,4 +25,4 @@ body,html {
   <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
-
+</div>
