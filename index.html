@@ -2,28 +2,9 @@
 layout: default
 title: 我的Blog
 ---
-<style>
-body,html {
- margin: 0px;
- font-size: 13px;
- font-family: Century Gothic Tahoma;
- background: #DDDDDD;
-}
-
-.container {
- background: #FFFFFF;
- width:1200px;
- position: relative;
- margin: 0 auto;
-p
-}
-</style>
-<div class="container">
-<h2>{{ page.title }}</h2>
 <p>最新文章</p>
 <ul>
 {% for post in site.posts %}
   <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
-</div>
