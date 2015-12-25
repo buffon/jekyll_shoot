@@ -1,6 +1,6 @@
 ---        
 layout: default
-title: coin in a line
+title: [算法面试题] coin in a line
 ---
 
 <h2>{{ page.title }}</h2>
